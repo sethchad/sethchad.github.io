@@ -48,3 +48,17 @@ footer {
     color: darkslateblue;
     text-align: center;
 }
+
+@media screen and(max-width: 900px) {
+    .container {
+        grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "footer footer footer"
+    }
+
+    body {
+        background: blue;
+    }
+}
