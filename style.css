@@ -54,7 +54,8 @@ footer {
         grid-template-areas:
         "header header header"
         "nav nav nav"
-        "main main aside"
+        "main main main"
+        "aside aside aside"
         "footer footer footer"
     }
 
