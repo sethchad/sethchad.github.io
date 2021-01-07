@@ -6,9 +6,10 @@ footer {grid-area: footer;}
 
 
 .container {
-    max-width: 1000px;
+    border: 5px solid black;
     margin: 0 auto;
     padding: 20px; 
+    /*max-width: 1000px;*/
     display: grid;
     grid-template-areas:
     "header header header"
