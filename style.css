@@ -1,11 +1,9 @@
-/*
 header { grid-area: header;}
 nav { grid-area: nav;}
 main { grid-area: main;}
 .profile-pic {grid-area: profile-pic;}
 projects {grid-area: projects;}
 footer {grid-area: footer;}
-*/
 
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -18,21 +16,21 @@ body {
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
-    /*display: grid;
+    display: grid;
     grid-template-areas:
     "header header header"
     "nav nav nav"
     "main main profile-pic"
     "project-list project-list project-list"
-    "footer footer footer"*/
+    "footer footer footer"
 }
 
-header {
+h1 {
     padding: 10px;
 }
 
 nav {
-    /*background-color: white;*/
+    background-color: white;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
 }
@@ -42,7 +40,6 @@ nav ul {
     justify-content: space-around;
     list-style-type: none;
     font-size: 18px;
-    font-weight: bold;
 }
 
 a {
@@ -54,14 +51,12 @@ nav a:hover {
     color: #36abc9;
 }
 
-
-.background-info {grid-area: background-info}
-.profile-pic {grid-area: profile-pic;}
+.project-description h3 a:hover {
+    color: #C95436;
+}
 
 main {
-    display: grid;
-    grid-template-areas: 
-    "background-info background-info profile-pic"
+    padding: 10px;
 }
 
 .profile-pic {
@@ -100,9 +95,6 @@ main {
     padding-left: 20px;
 }
 
-h3 a:hover {
-    color: #C95436;
-}
 footer {
     color: rgb(95, 95, 95);
     text-align: center;
@@ -135,10 +127,8 @@ footer {
         flex-direction: column;
     }
     
-    main {
-        grid-template-area:
-        "profile-pic"
-        "background-info"
+    main h2 {
+        text-align: center;
     }
     
     .profile-pic {
@@ -149,9 +139,5 @@ footer {
     .profile-pic img {
         max-height: 200px;
         max-width: 200px;
-    }
-
-    .background-info h2 {
-        text-align: center;
     }
 }
