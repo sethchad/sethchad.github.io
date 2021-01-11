@@ -2,7 +2,7 @@ header { grid-area: header;}
 nav { grid-area: nav;}
 main { grid-area: main;}
 .profile-pic {grid-area: profile-pic;}
-projects {grid-area: projects;}
+.project-list {grid-area: project-list;}
 footer {grid-area: footer;}
 
 body {
@@ -33,13 +33,12 @@ nav {
     background-color: white;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
-}
-
-nav ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 500;
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
-    font-size: 18px;
 }
 
 a {
@@ -57,6 +56,9 @@ nav a:hover {
 
 main {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .profile-pic {
@@ -101,7 +103,7 @@ footer {
     padding: 1rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .container {
         grid-template-areas:
         "header header header"
@@ -119,14 +121,16 @@ footer {
     
     nav {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
+    nav a {
+        text-align: center;
+        padding: 10px;
     }
-    
+
     main h2 {
         text-align: center;
     }
@@ -139,5 +143,15 @@ footer {
     .profile-pic img {
         max-height: 200px;
         max-width: 200px;
+    }
+
+    .project-list .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-description h3, p {
+        text-align: center;
     }
 }
