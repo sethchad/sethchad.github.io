@@ -5,12 +5,17 @@ main { grid-area: main;}
 projects {grid-area: projects;}
 footer {grid-area: footer;}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 243, 243);
+}
 
 .container {
-    border: 1px solid slategray;
+    background: white;
+    border: 1px solid rgb(180, 188, 197);
     margin: 0 auto;
-    padding: 20px; 
     max-width: 800px;
+    padding: 20px;
     display: grid;
     grid-template-areas:
     "header header header"
@@ -20,33 +25,66 @@ footer {grid-area: footer;}
     "footer footer footer"
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 header {
-    background: lemonchiffon;
+    display: flex;
+    justify-content: space-between;
 }
 
-.h1 {
-    background: teal;
+h1 {
+    color: teal;
 }
 
-ul {
-    display: inline;
+header a {
+    text-align: right;
 }
 
+.linkedin a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: white;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: #36abc9;
+}
+
+.project-description h3 a:hover {
+    colore: #C95436;
+}
 main {
     padding: 10px;
 }
+
 .profile-pic {
-    text-align: center;
+    padding: 10px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    border: 5px solid #C95436;
+    box-shadow: 5px 5px 5px rgb(172, 165, 165)
 }
 
 .project-list {
-    border-top: 1px solid slategray;
-    margin-top: 30px;
-    text-align: center;
+    /*border-top: 1px solid slategray;*/
+    margin-top: 40px;
 }
 
 .project {
@@ -55,7 +93,9 @@ main {
 }
 
 .project img {
-    border: 5px solid green;
+    border: 5px solid #36abc9;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px rgb(172, 165, 165);
 }
 
 .project-description {
@@ -81,5 +121,14 @@ footer {
 
     body {
         background: lightcoral;
+    }
+
+  .profile-pic{
+        display: flex;
+        justify-content: center;
+    }
+
+    main h2{
+        text-align: center;
     }
 }
