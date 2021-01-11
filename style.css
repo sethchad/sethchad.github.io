@@ -73,6 +73,7 @@ main {
 }
 
 .profile-pic {
+    max-width: 100%;
     padding: 10px;
 }
 
@@ -126,6 +127,7 @@ footer {
   .profile-pic{
         display: flex;
         justify-content: center;
+        max-width: 80%;
     }
 
     main h2{
