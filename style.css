@@ -6,7 +6,7 @@ projects {grid-area: projects;}
 footer {grid-area: footer;}
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background-color: rgb(247, 243, 243);
 }
 
@@ -25,28 +25,14 @@ body {
     "footer footer footer"
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-}
-
 h1 {
-    color: teal;
-}
-
-header a {
-    text-align: right;
-}
-
-.linkedin a {
-    text-decoration: none;
+    padding: 10px;
 }
 
 nav {
     background-color: white;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
-
 }
 
 nav ul {
@@ -66,18 +52,20 @@ nav a:hover {
 }
 
 .project-description h3 a:hover {
-    colore: #C95436;
+    color: #C95436;
 }
+
 main {
     padding: 10px;
 }
 
 .profile-pic {
-    max-width: 21%;
     padding: 10px;
 }
 
 .profile-pic img {
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
     border: 5px solid #C95436;
     box-shadow: 5px 5px 5px rgb(172, 165, 165)
@@ -86,6 +74,8 @@ main {
 .project-list {
     /*border-top: 1px solid slategray;*/
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project {
@@ -94,6 +84,8 @@ main {
 }
 
 .project img {
+    max-height: 200px;
+    max-width: 200px;
     border: 5px solid #36abc9;
     border-radius: 10%;
     box-shadow: 5px 5px 5px rgb(172, 165, 165);
@@ -104,7 +96,7 @@ main {
 }
 
 footer {
-    color: darkslateblue;
+    color: rgb(95, 95, 95);
     text-align: center;
     padding: 1rem;
 }
@@ -120,17 +112,32 @@ footer {
         "footer footer footer"
     }
 
-    body {
-        background: lightcoral;
-    }
-
-  .profile-pic{
+    header {
         display: flex;
         justify-content: center;
-        max-width: 80%;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
     }
 
-    main h2{
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main h2 {
         text-align: center;
+    }
+    
+    .profile-pic {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profile-pic img {
+        max-height: 200px;
+        max-width: 200px;
     }
 }
