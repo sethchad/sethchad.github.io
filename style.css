@@ -80,11 +80,6 @@ main {
     flex-direction: column;
 }
 
-.project-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
 .project {
     display: flex;
     padding: 10px;
