@@ -80,6 +80,10 @@ main {
     flex-direction: column;
 }
 
+.project-list h2 {
+    text-align: center;
+}
+
 .project {
     display: flex;
     padding: 10px;
